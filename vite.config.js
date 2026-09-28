@@ -1,18 +1,2 @@
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
-import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
-
-const repositoryRoot = dirname(fileURLToPath(import.meta.url));
-
-export default defineConfig({
-  base: "/babylon-lite-multiplayer-draw/",
-  plugins: [react()],
-  root: "multiplayer-draw",
-  server: {
-    fs: {
-      allow: [repositoryRoot],
-    },
-  },
-});
-
+import { defineConfig } from 'vite';
+export default defineConfig({ base: '/babylon-lite-multiplayer-draw/', root: 'multiplayer-draw', server: { host: '127.0.0.1', port: 5173 } });

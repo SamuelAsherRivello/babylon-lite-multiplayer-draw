@@ -23,3 +23,7 @@ Minimum reusable lifecycle and drawing demo. No accounts, durable artwork, ident
 ## Migration Plan
 No existing users. Pin client package and backend releases together. Maintain dependent demo versions and upgrade affected demos on protocol changes. Roll back failed backend releases to the previous verified deployment.
 
+
+## Implementation discovery
+The installed Colyseus SDK enables session-preserving reconnection by default. The shared client must set room.reconnection.enabled = false and perform a fresh join itself, matching the user's identity requirement.
+

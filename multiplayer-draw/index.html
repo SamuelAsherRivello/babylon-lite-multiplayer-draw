@@ -1,16 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GitHub Repository Template</title>
-  </head>
-  <body>
-    <!-- Game engine content belongs in content_layer when a game engine exists. -->
-    <div id="content_layer"></div>
-
-    <!-- Any UI, HTML, React, or user-interface content belongs in ui_layer. -->
-    <div id="ui_layer"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#111b27"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><title>Multiplayer Draw</title></head>
+<body>
+<div id="content_layer">
+  <main class="studio">
+    <header class="studio-heading"><span class="eyebrow">A LITTLE SPACE TO MAKE SOMETHING</span><h1>Multiplayer Draw<span class="title-dot">.</span></h1><p>One canvas. A few strangers. See what happens.</p></header>
+    <section class="workspace" aria-label="Shared drawing canvas">
+      <div class="paper" id="paper">
+        <canvas id="canvas" aria-label="Draw with a pointer or touch. Press P for pencil or E for eraser."></canvas>
+        <div id="cursors" aria-hidden="true"></div>
+        <div id="overlay" role="status"><span class="loading-dot"></span><strong id="overlay-title">Preparing your canvas</strong><p id="overlay-message">Starting WebGPU…</p><button id="retry" hidden>Try again</button></div>
+        <span class="paper-label">MAKE YOUR MARK</span>
+      </div>
+      <div class="toolbar" role="toolbar" aria-label="Drawing tools">
+        <button id="pencil" class="tool selected" aria-pressed="true" title="Pencil (P)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16-1 5 5-1L20 8l-4-4L4 16Zm10-10 4 4M4 16l4 4M17 3l1-1a2 2 0 0 1 3 3l-1 1"/></svg><span>Pencil</span><kbd>P</kbd></button>
+        <button id="eraser" class="tool" aria-pressed="false" title="Erase your own whole strokes (E)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 14 9-10a2 2 0 0 1 3 0l6 6a2 2 0 0 1 0 3l-7 8H9l-6-5a2 2 0 0 1 0-2Zm4-5 10 9M14 21h8"/></svg><span>Eraser</span><kbd>E</kbd></button>
+        <span class="tool-note" id="tool-note">Draw something good.</span>
+      </div>
+      <div class="session-bar" aria-live="polite"><span id="identity"><i id="color-chip"></i><span id="identity-text">Finding your seat…</span></span><span id="connection" data-state="connecting">Connecting</span><span id="occupancy">0 / 12</span></div>
+      <p class="footnote" id="notice">Your marks disappear when you leave. Erase only your own strokes.</p>
+    </section>
+  </main>
+</div>
+<div id="ui_layer">
+  <div class="corner corner_top_left"><span class="brand">MULTIPLAYER DRAW<span class="brand-dot"> / </span>RMC</span></div>
+  <div class="corner corner_top_right"><a href="https://github.com/SamuelAsherRivello/babylon-lite-multiplayer-draw" target="_blank" rel="noopener noreferrer">Source ↗</a><a href="https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server" target="_blank" rel="noopener noreferrer">Server ↗</a></div>
+  <div class="corner corner_bottom_left"><button id="fullscreen" title="Toggle fullscreen">⛶ <span>Fullscreen</span></button></div>
+  <div class="corner corner_bottom_right"><span id="version"></span></div>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body></html>
