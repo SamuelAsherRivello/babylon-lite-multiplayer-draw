@@ -6,12 +6,13 @@ import { defineConfig } from "vite";
 const repositoryRoot = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  base: "/github-repository-template/",
+  base: "/babylon-lite-multiplayer-draw/",
   plugins: [react()],
-  root: "project-name",
+  root: "multiplayer-draw",
   server: {
     fs: {
       allow: [repositoryRoot],
     },
   },
 });
+

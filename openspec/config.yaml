@@ -1,20 +1,10 @@
 schema: spec-driven
 context: |
-  Repository: project-name.
-  This repository starts as a reusable template with no application
-  implementation, product decisions, or approved technology stack.
-  Canonical project documentation assets live in project-name/documentation/.
-  Before proposing or applying a change, record the project's verified purpose,
-  runtime targets, architecture, dependency policy, security constraints, and
-  validation commands here.
-rules:
-  proposal:
-    - Mark unresolved decisions clearly; recommendations are not approvals.
-    - State the affected user behavior and acceptance criteria.
-  design:
-    - Describe only architecture and technologies verified for this project.
-    - Preserve explicit boundaries between application layers or packages.
-  tasks:
-    - Keep planning, implementation, and verification tasks explicit.
-    - Include focused checks appropriate to the implemented change.
-
+  Repository babylon-lite-multiplayer-draw, display name Multiplayer Draw.
+  Babylon Lite/WebGPU frontend in multiplayer-draw/ on GitHub Pages.
+  Separate rmc-colyseus-multiplayer-server on Vercel Hobby only.
+  Anonymous fresh identities, hot join/drop, own-stroke erasing, departure cleanup.
+  Live hosting feasibility before drawing UI. Hard minimum 2 remote players; target 12.
+  No paid service or provider substitutions. No frontend credentials.
+  Shared client published as pinned GitHub Release tarball.
+  Validate local integration, live cross-host sessions, and browser interaction.

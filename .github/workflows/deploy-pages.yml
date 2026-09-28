@@ -38,7 +38,7 @@ jobs:
       - name: Prepare demo artifact
         run: |
           mkdir -p _site
-          cp -R project-name/dist/. _site/
+          cp -R multiplayer-draw/dist/. _site/
           cp version.txt _site/version.txt
       - name: Upload demo
         uses: actions/upload-pages-artifact@v3
@@ -47,3 +47,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+

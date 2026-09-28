@@ -2,10 +2,11 @@
 
 # Node and Vite output.
 node_modules/
-/project-name/dist/
+/multiplayer-draw/dist/
 
 # Local configuration. Commit examples only, never credentials.
 .env
 .env.*
 # Playwright CLI output (may contain credentials)
 .playwright-cli/
+
