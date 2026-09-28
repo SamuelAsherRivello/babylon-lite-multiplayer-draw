@@ -13,6 +13,6 @@
 
 ## 3. Game and release
 - [x] 3.1 Adapt the template to multiplayer-draw and implement Babylon Lite drawing, controls, cursors and connection UI; verify desktop and mobile browser behavior.
-- [ ] 3.2 Implement tagged release/deployment/rollback workflows and verify a backend release plus frontend Pages deployment.
-- [ ] 3.3 Verify the public game across independent hosts, attempt 12 live clients, capture a real screenshot, and publish exact acceptance evidence in README.
-- [ ] 3.4 Complete the applicable template checklist, validate OpenSpec, and synchronize local and remote release revisions; verify clean Git status and version agreement.
+- [x] 3.2 Implement tagged release/deployment/rollback workflows and verify a backend release plus frontend Pages deployment.
+- [x] 3.3 Verify the public game across independent hosts, attempt 12 live clients, capture a real screenshot, and publish exact acceptance evidence in README.
+- [x] 3.4 Complete the applicable template checklist, validate OpenSpec, and synchronize local and remote release revisions; verify clean Git status and version agreement.
