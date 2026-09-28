@@ -2,7 +2,7 @@
 
 A shared portrait drawing canvas built with Babylon Lite and Colyseus. Pick a pencil, make a mark, and see other players drawing alongside you. Erase only your own whole strokes; your artwork disappears when you leave.
 
-**Status: implemented and tested locally, with a live backend. GitHub Pages and the first shared-client release are pending the Vercel automation token.**
+**Status:** backend v0.1.0 released and deployed through GitHub Actions; frontend Pages publication is in progress.
 
 ![Multiplayer Draw](multiplayer-draw/documentation/screenshot01.png)
 
@@ -21,9 +21,9 @@ Up to 12 participants share the canvas. No accounts or lobby are needed. Player 
 
 Use Node 24, npm, and a recent WebGPU-capable browser.
 
-This pre-release workspace currently installs the locally built shared-client tarball from `.setup/`. That ignored artifact is available in the current workspace but not a fresh checkout. Publishing the backend client release and replacing this dependency with its pinned public URL is an explicit remaining release gate.
+The shared client is pinned to the backend v0.1.0 GitHub Release tarball and locked in package-lock.json. No npm account or private registry is required.
 
-With that package available:
+From the repository root:
 
 ```sh
 npm ci
