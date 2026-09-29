@@ -6,6 +6,72 @@ A shared portrait drawing canvas built with Babylon Lite and Colyseus. Pick a pe
 
 **[▶ Play Multiplayer Draw](https://samuelasherrivello.github.io/babylon-lite-multiplayer-draw/)**
 
+## Original AI Prompt
+
+<details>
+<summary>Read the full original project prompt (edited for grammar, punctuation, spelling, and formatting)</summary>
+
+The initial drawing-app request is reproduced below. The repository naming clarification from the next message follows it; later design decisions are recorded separately in OpenSpec.
+
+```text
+$openspec-explore
+
+rmc-colyseus-multiplayer-server
+
+Let's work on one sample game—actually, just a very simple project. We will use
+this to set up the multiplayer server, which will be a second repository. I will
+put the server name in the chat.
+
+Create a game using the game creator skill. This will be the first multiplayer
+game, and we will keep it very simple. When it is done, I expect to be able to
+release a new version and play it from its README. When I open it, it connects
+to the RMC Colyseus Multiplayer Server, which will be the new backend for all
+these demos.
+
+If the AI has a question or any doubt about the multiplayer solution, it should
+ask, "Am I updating the RMC Colyseus Multiplayer Server?" If the user says yes,
+then you know what to do: create a relay version of the game that is playable
+across different machines whenever more than one user plays.
+
+The games do not necessarily need rooms or lobbies. If that is built into
+Colyseus, great. A generic way to help players find each other would be useful.
+The scope of these games should be small enough to hot join players: if I am in
+a session and you join a second later, or I open a second window, put us in the
+same game. Try to keep game concepts compatible with that. For a turn-based
+experience where joining mid-game does not make sense, you can make that call.
+The idea is for players to join and leave really easily.
+
+The first game will have a button with a pencil and a button with an eraser.
+Click the pencil to draw; click the eraser to erase. It is a portrait-aspect-ratio
+Babylon Lite game—really an app that lets you draw and erase.
+
+If I open multiple windows—for example, ten, if Colyseus has no hard limit—each
+one gets a random color assigned based on its player number. Each player can
+draw and erase on the shared canvas. Use whatever prediction is available in
+the Colyseus documentation to make drawing smooth, if that would improve it.
+You can decide which specific features to use.
+
+We want hot join and hot drop: a player can join or leave at any time. Other
+players see that person's cursor moving and the results of their drawing.
+When you erase, you can erase only your own artwork, not another person's.
+
+If an instance disconnects or refreshes its browser—which is essentially
+leaving—erase all of that player's lines. That's it.
+```
+
+Naming clarification:
+
+```text
+The game is babylon-lite-multiplayer-draw, "Multiplayer Draw," with folder name
+"multiplayer-draw".
+```
+
+Later clarifications set the drawing capacity to 12, required at least two players on different computers, selected GitHub Pages plus a reusable Vercel-hosted Colyseus backend, and chose fresh identities on reconnect. See the [accepted proposal](openspec/changes/archive/2026-09-28-add-multiplayer-draw-and-shared-colyseus-server/proposal.md), [design decisions](openspec/changes/archive/2026-09-28-add-multiplayer-draw-and-shared-colyseus-server/design.md), and [shared multiplayer specification](openspec/specs/shared-multiplayer/spec.md).
+
+Prompt context: [Game creator skill](.agents/skills/rmc-game-creator/SKILL.md) · [Repository template](https://github.com/SamuelAsherRivello/github-repository-template) · [AI Skills Library](https://github.com/SamuelAsherRivello/ai-skills-library) · [Reusable Colyseus server](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server)
+
+</details>
+
 ## Images
 
 ### Screenshots
@@ -26,11 +92,12 @@ Use a recent WebGPU-capable browser. The frontend runs on GitHub Pages and conne
 
 ## Table of Contents
 
-1. [Images](#images)
-2. [Live Demo](#live-demo)
-3. [Getting Started](#getting-started)
-4. [Project Details](#project-details)
-5. [Credits](#credits)
+1. [Original AI Prompt](#original-ai-prompt)
+2. [Images](#images)
+3. [Live Demo](#live-demo)
+4. [Getting Started](#getting-started)
+5. [Project Details](#project-details)
+6. [Credits](#credits)
 
 ## Getting Started
 
