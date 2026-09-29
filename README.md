@@ -76,9 +76,8 @@ Prompt context: [Game creator skill](.agents/skills/rmc-game-creator/SKILL.md) �
 
 ### Screenshots
 
-<a href="https://samuelasherrivello.github.io/babylon-lite-multiplayer-draw/"><img src="multiplayer-draw/documentation/screenshot01.png" width="600" alt="Play Multiplayer Draw — shared canvas with two players drawing a planet" /></a>
+<a href="https://samuelasherrivello.github.io/babylon-lite-multiplayer-draw/"><img src="multiplayer-draw/documentation/screenshot01.png" width="400" alt="Play Multiplayer Draw — shared canvas with two players drawing a planet" /></a>
 
-<a href="multiplayer-draw/documentation/mobile.png"><img src="multiplayer-draw/documentation/mobile.png" width="220" alt="Multiplayer Draw on a narrow mobile screen" /></a>
 
 Captured from the released game in a real browser. Click the desktop screenshot to play.
 
