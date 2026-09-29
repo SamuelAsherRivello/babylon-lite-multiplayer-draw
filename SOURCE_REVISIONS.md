@@ -7,3 +7,11 @@
 - CLI OpenSpec 1.13.1; doctor reports a healthy root.
 - Explicit user override: multiplayer-draw/ application root and multiplayer behavior.
 - GitHub template-generation flow was used as requested. No template history was copied; checklist instructions for manually copying an inspiration repository do not apply to this flow.
+
+## Subsequent skill relocation
+
+On 2026-09-29, the project's 17 OpenSpec and six AI Skills Library skills were
+consolidated into `~/.agents/skills/` at the user's request. Newer global AI
+Skills Library versions were retained; newer project OpenSpec versions were
+moved globally. The local OpenSpec registration marker was removed to prevent
+automatic local regeneration. The import notes above record the original setup.

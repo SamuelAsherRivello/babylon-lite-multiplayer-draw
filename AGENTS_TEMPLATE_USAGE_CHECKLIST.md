@@ -14,3 +14,7 @@ Completed for **Multiplayer Draw**, 2026-09-28. This records the applicable temp
 - [x] Verified backend v0.1.0 release/deployment/rollback and frontend patch release v0.0.3/Pages. Public version and tag agree; README Play link is live.
 - [x] Documented exact test evidence, release process and hosting limitations. Remaining template/library names are intentional provenance or skill instructions.
 - [x] Asked about optional checklist cleanup. The completed audit is retained by default; the user can request removal. This does not block delivery.
+
+Subsequent update (2026-09-29): OpenSpec and AI Skills Library skills now use
+user-wide discovery, as requested. See `AGENTS.md` and `SOURCE_REVISIONS.md` for
+the current arrangement; the checklist above records the original delivery.
