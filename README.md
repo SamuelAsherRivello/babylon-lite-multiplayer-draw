@@ -164,19 +164,11 @@ Babylon Lite renders the 9:16 drawing surface through WebGPU. HTML provides penc
 
 - [Babylon Lite](https://github.com/BabylonJS/Babylon-Lite) — WebGPU rendering.
 - [Colyseus](https://colyseus.io/) — multiplayer rooms and messaging.
-- [RMC shared multiplayer client](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server/tree/main/packages/client) — admission, identity, occupancy and reconnection.
+- [RMC shared multiplayer client](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server/tree/main/multiplayer-server/packages/client) — admission, identity, occupancy and reconnection.
 - [Vite](https://vite.dev/) — development server and production builds.
 - [Playwright](https://playwright.dev/) — real-browser verification.
 
-### ✅ Verification
-
-Public two-browser drawing, remote rendering, erase ownership, refresh/departure cleanup, mobile layout, asset loading and version agreement passed. The backend passed 12-client capacity and thirteenth-client rejection tests. Two independent hosts exchanged drawing messages; an 11-minute hosting probe crossed two timeout/rejoin cycles. Automated releases, clean package installation, rollback and restoration were verified. See [exact test evidence and workflow runs](multiplayer-draw/documentation/verification.md).
-
-### ⚠️ Hosting Limits
-
-This is an experimental portfolio service with in-memory state. Vercel can end sessions around five minutes; clients then rejoin as fresh players and old artwork is removed. One deployment does not guarantee that future connections always reach the same running process. There is no durable storage or account system.
-
-Drawing is limited to 100 strokes and 10,000 points per player, with 2,048 points per stroke. Erase strokes to reclaim space. Mobile testing used emulated touch; physical-device testing is not claimed.
+See the [server hosting documentation](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server#hosting-limits) for backend details.
 
 ## Credits
 
