@@ -83,9 +83,9 @@ Captured from the released game in a real browser. Click the desktop screenshot 
 
 ## Live Demo
 
+<!-- AI guidance: Do not add frontend or shared server/client release links to this Live Demo section. -->
+
 - **[Play Multiplayer Draw](https://samuelasherrivello.github.io/babylon-lite-multiplayer-draw/)** — open the same link on another computer or browser tab to draw together.
-- [Frontend release v0.0.3](https://github.com/SamuelAsherRivello/babylon-lite-multiplayer-draw/releases/tag/v0.0.3)
-- [Shared Colyseus server and client v0.1.0](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server/releases/tag/v0.1.0)
 
 Use a recent WebGPU-capable browser. The frontend runs on GitHub Pages and connects automatically to the shared backend on Vercel Hobby.
 
@@ -144,14 +144,6 @@ Run `node multiplayer-draw/test/public-browser.mjs` to check the released Pages 
 
 Babylon Lite renders the 9:16 drawing surface through WebGPU. HTML provides pencil/eraser controls, identity, connection status and occupancy. Drawing appears locally immediately; batched messages relay strokes and smoothed remote cursors through Colyseus.
 
-### 📝 Structure
-
-- `multiplayer-draw/index.html` provides the page and accessible controls.
-- `multiplayer-draw/src/` contains rendering, pointer input and multiplayer integration.
-- `multiplayer-draw/test/` contains geometry, development-browser and public-browser checks.
-- `multiplayer-draw/documentation/` contains screenshots and [verification evidence](multiplayer-draw/documentation/verification.md).
-- Repository-root package files, Vite configuration and `.github/workflows/` control builds and releases.
-
 ### 📦 AI
 
 - [AGENTS.md](AGENTS.md) contains repository-specific agent guidance.
@@ -159,6 +151,12 @@ Babylon Lite renders the 9:16 drawing surface through WebGPU. HTML provides penc
 - [OpenSpec](openspec/) records the accepted requirements and implementation work.
 - Created using [github-repository-template](https://github.com/SamuelAsherRivello/github-repository-template) and [ai-skills-library](https://github.com/SamuelAsherRivello/ai-skills-library), with exact revisions in [SOURCE_REVISIONS.md](SOURCE_REVISIONS.md).
 - Requested brief: “Multiplayer Draw,” repository `babylon-lite-multiplayer-draw`, application folder `multiplayer-draw/`; simple pencil/eraser drawing with hot join/drop and own-artwork cleanup. Multiplayer is this project's explicit override; the global single-player creator skill was preserved.
+
+### 🌐 Multiplayer Server
+
+A reusable Colyseus backend connects players and synchronizes the shared drawing session.
+
+- [RMC Colyseus Multiplayer Server](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server)
 
 ### 📦 Packages
 
@@ -169,6 +167,14 @@ Babylon Lite renders the 9:16 drawing surface through WebGPU. HTML provides penc
 - [Playwright](https://playwright.dev/) — real-browser verification.
 
 See the [server hosting documentation](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server#hosting-limits) for backend details.
+
+### 📝 Structure
+
+- `multiplayer-draw/index.html` provides the page and accessible controls.
+- `multiplayer-draw/src/` contains rendering, pointer input and multiplayer integration.
+- `multiplayer-draw/test/` contains geometry, development-browser and public-browser checks.
+- `multiplayer-draw/documentation/` contains screenshots and [verification evidence](multiplayer-draw/documentation/verification.md).
+- Repository-root package files, Vite configuration and `.github/workflows/` control builds and releases.
 
 ## Credits
 
