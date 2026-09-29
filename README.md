@@ -68,7 +68,7 @@ The game is babylon-lite-multiplayer-draw, "Multiplayer Draw," with folder name
 
 Later clarifications set the drawing capacity to 12, required at least two players on different computers, selected GitHub Pages plus a reusable Vercel-hosted Colyseus backend, and chose fresh identities on reconnect. See the [accepted proposal](openspec/changes/archive/2026-09-28-add-multiplayer-draw-and-shared-colyseus-server/proposal.md), [design decisions](openspec/changes/archive/2026-09-28-add-multiplayer-draw-and-shared-colyseus-server/design.md), and [shared multiplayer specification](openspec/specs/shared-multiplayer/spec.md).
 
-Prompt context: [Game creator skill](.agents/skills/rmc-game-creator/SKILL.md) · [Repository template](https://github.com/SamuelAsherRivello/github-repository-template) · [AI Skills Library](https://github.com/SamuelAsherRivello/ai-skills-library) · [Reusable Colyseus server](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server)
+Prompt context: [Game creator skill](https://github.com/SamuelAsherRivello/ai-skills-library/blob/master/.agents/skills/rmc-game-creator/SKILL.md) · [Repository template](https://github.com/SamuelAsherRivello/github-repository-template) · [AI Skills Library](https://github.com/SamuelAsherRivello/ai-skills-library) · [Reusable Colyseus server](https://github.com/SamuelAsherRivello/rmc-colyseus-multiplayer-server)
 
 </details>
 
